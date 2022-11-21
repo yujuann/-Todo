@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 타이틀 이름 및 시간 -->
+    <div class="Container">
+      <div class="wrapper-big">
+        <header class="header">
+          <div class="header-time">
+            ToDo Planner✨
+            <h1 id="clock">00:00:00</h1>
+          </div>
+        </header>
+        <!-- 날짜 -->
+
+        <!-- 날짜 -->
+        <div class="wrapper">
+          <div class="todayis">
+            TODAY IS
+            <h4 id="today"></h4>
+          </div>
+        </div>
+        <div class="one">
+          <div class="A-Container">
+            <div class="One-box">
+              <div class="inbox">
+                <form id="login-form" class="hidden">
+                  <input
+                    required
+                    maxlength="15"
+                    type="text"
+                    placeholder="What is your name?"
+                  />
+                  <button type="submit">Log In</button>
+                </form>
+              </div>
+              <h1 id="greeting" class="hidden"></h1>
+            </div>
+            <div class="advice-box">
+              <div id="advice">
+                💁🏻‍♀️오늘의 명언:
+                <span class="talk"></span>
+                <span class="talk"></span>
+              </div>
+            </div>
+          </div>
+          <div class="B-Container">
+            <div class="todo-wrapper">
+              <form id="todo-form">
+                <input
+                  type="text"
+                  placeholder="Write Your Something To Do 😄"
+                  required
+                />
+              </form>
+              <ul id="todo-list"></ul>
+            </div>
+          </div>
+        </diㅣv>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/advice.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/date.js"></script>
+  </body>
+</html>
